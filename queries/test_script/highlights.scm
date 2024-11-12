@@ -1,5 +1,6 @@
 ; Keywords
 (assignment_keyword) @keyword
+(for_keyword) @keyword.loop
 
 ; Tests
 (test) @function
@@ -13,8 +14,23 @@
 (regex) @string.regexp
 
 ; Operators
+(addition) @operator
+(subtraction) @operator
+(multiplication) @operator
+(division) @operator
+
 (colon) @operator
 (assignment_operator) @operator
+
+(in_operator) @operator
+
+; Punctuation
+(semicolon) @punctuation.delimiter
+
+(open_paren) @punctuation.bracket
+(close_paren) @punctuation.bracket
+(open_brace) @punctuation.brace
+(close_brace) @punctuation.brace
 
 ; Types
 (type) @type.builtin
