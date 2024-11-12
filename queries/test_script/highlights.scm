@@ -3,6 +3,7 @@
 (for_keyword) @keyword.loop
 
 ; Tests
+(test_identifier) @function
 (test) @function
 
 ; Variables
