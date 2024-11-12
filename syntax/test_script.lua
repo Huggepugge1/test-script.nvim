@@ -13,6 +13,9 @@ vim.api.nvim_command('syntax region test_scriptString start=/"/ end=/"/ contains
 -- Numbers
 vim.api.nvim_command("syntax match test_scriptNumber /\\d\\+/")
 
+-- Identifiers
+vim.api.nvim_command("syntax match test_scriptIdentifier /\\w[\\w\\d]\\+/")
+
 -- Comments
 vim.api.nvim_command("syntax match test_scriptComment /\\/.*$/")
 
@@ -23,6 +26,7 @@ vim.api.nvim_command("syntax match test_scriptOperator /[+\\-*\\/=]\\+/")
 vim.api.nvim_command("highlight default link test_scriptKeyword Keyword")
 vim.api.nvim_command("highlight default link test_scriptString String")
 vim.api.nvim_command("highlight default link test_scriptNumber Number")
+vim.api.nvim_command("highlight default link test_scriptIdentifier Identifier")
 vim.api.nvim_command("highlight default link test_scriptComment Comment")
 vim.api.nvim_command("highlight default link test_scriptOperator Operator")
 
