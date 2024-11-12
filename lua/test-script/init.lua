@@ -2,8 +2,15 @@
 local M = {}
 
 -- Configure the parser
-M.setup = function(opts)
+M.setup = function()
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+
+	-- Configure filetype detection
+	vim.filetype.add({
+		extension = {
+			test_script = "tesc", -- Map file extension to filetype
+		},
+	})
 
 	-- Register your custom parser
 	parser_config.test_script = {
@@ -23,13 +30,7 @@ M.setup = function(opts)
 		highlight = {
 			enable = true,
 			-- Custom queries for highlighting
-			additional_vim_regex_highlighting = false,
-		},
-	})
-	-- Configure filetype detection
-	vim.filetype.add({
-		extension = {
-			test_script = "tesc", -- Map file extension to filetype
+			additional_vim_regex_highlighting = true,
 		},
 	})
 end
