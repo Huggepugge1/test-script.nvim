@@ -6,7 +6,7 @@ M.setup = function(opts)
 	local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
 	-- Register your custom parser
-	parser_config.your_language = {
+	parser_config.test_script = {
 		install_info = {
 			url = "https://github.com/Huggepugge1/test-script-parser", -- Local path or GitHub URL
 			files = { "src/parser.c" }, -- Parser source files
