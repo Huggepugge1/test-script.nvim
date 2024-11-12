@@ -32,6 +32,11 @@
 (open_brace) @punctuation.brace
 (close_brace) @punctuation.brace
 
+; Functions
+(built_in_function) @function.builtin
+(built_in_function_call) @function.builtin.call
+(function_call) @function.call
+
 ; Types
 (type) @type.builtin
 
