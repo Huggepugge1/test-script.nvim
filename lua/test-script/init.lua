@@ -8,7 +8,7 @@ M.setup = function()
 	-- Configure filetype detection
 	vim.filetype.add({
 		extension = {
-			test_script = "tesc", -- Map file extension to filetype
+			tesc = "test_script", -- Map file extension to filetype
 		},
 	})
 
