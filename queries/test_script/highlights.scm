@@ -35,6 +35,7 @@
 ; Functions
 (built_in_function) @function.builtin
 (built_in_function_call) @function.builtin.call
+(function) @function
 (function_call) @function.call
 
 ; Types
