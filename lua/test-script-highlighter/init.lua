@@ -1,5 +1,5 @@
 local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-parser_config.sdjot = {
+parser_config.test_script = {
 	install_info = {
 		-- Change this url to your grammar
 		url = "https://github.com/Huggepugge1/test-script-parser",
