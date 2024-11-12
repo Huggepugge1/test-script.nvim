@@ -19,6 +19,7 @@
 (subtraction) @operator
 (multiplication) @operator
 (division) @operator
+(type_cast_operator) @keyword.operator
 
 (colon) @operator
 (assignment_operator) @operator
