@@ -1,6 +1,7 @@
 ; Keywords
-"for"
-"in"
+"for" @keyword.contol
+"let" @keyword.declaration
+"const" @keyword.declaration
 
 ; Operators
 [
@@ -9,6 +10,8 @@
  "*"
  "/"
  "="
+ "in"
+ "as"
 ] @operator
 
 ; Punctuation
