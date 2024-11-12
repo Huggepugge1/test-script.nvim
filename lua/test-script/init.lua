@@ -10,7 +10,7 @@ M.setup = function(opts)
 		install_info = {
 			url = "https://github.com/Huggepugge1/test-script-parser", -- Local path or GitHub URL
 			files = { "src/parser.c" }, -- Parser source files
-			branch = "main",
+			branch = "master",
 			generate_requires_npm = false, -- Set to true if using Node.js
 			requires_generate_from_grammar = false, -- Set to true if grammar needs compilation
 		},
