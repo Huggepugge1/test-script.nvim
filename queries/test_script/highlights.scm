@@ -22,7 +22,7 @@
 (colon) @operator
 (assignment_operator) @operator
 
-(in_operator) @operator
+(in_operator) @keyword.operator
 
 ; Punctuation
 (semicolon) @punctuation.delimiter
