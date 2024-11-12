@@ -17,7 +17,7 @@ vim.api.nvim_command("syntax match test_scriptOperator /[+\\-*\\/=]\\+/")
 vim.api.nvim_command('syntax region test_scriptString start=/"/ end=/"/ contains=test_scriptEscape')
 
 -- Numbers
-vim.api.nvim_command("syntax match test_scriptNumber /[^\\w]\\d\\+/")
+vim.api.nvim_command("syntax match test_scriptNumber /[\\^\\w]\\d\\+/")
 
 -- Comments
 vim.api.nvim_command("syntax match test_scriptComment /\\/.*$/")
