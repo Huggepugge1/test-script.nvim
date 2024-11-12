@@ -8,16 +8,16 @@ vim.api.nvim_command("syntax clear")
 vim.api.nvim_command("syntax keyword test_scriptKeyword let const for in")
 
 -- String
-vim.api.nvim_command('syntax region test_scriptString start=/"/+ end=/"/ contains=test_scriptEscape')
+vim.api.nvim_command('syntax region test_scriptString start=/"/ end=/"/ contains=test_scriptEscape')
 
 -- Numbers
 vim.api.nvim_command("syntax match test_scriptNumber /\\d\\+/")
 
 -- Comments
-vim.api.nvim_command("syntax region test_scriptComment /\\/\\.*$/")
+vim.api.nvim_command("syntax match test_scriptComment /\\/.*$/")
 
 -- Operators
-vim.api.nvim_command("syntax match test_scriptOperator /[+-*/=]+/")
+vim.api.nvim_command("syntax match test_scriptOperator /[+\\-*\\/=]\\+/")
 
 -- Link groups to highlight groups
 vim.api.nvim_command("highlight default link test_scriptKeyword Keyword")
