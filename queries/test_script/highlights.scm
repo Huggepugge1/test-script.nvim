@@ -6,7 +6,7 @@
 ; Literal
 (number) @number
 (string) @string
-(regex) @regex
+(regex) @string.regexp
 
 ; Error
 (ERROR) @error
