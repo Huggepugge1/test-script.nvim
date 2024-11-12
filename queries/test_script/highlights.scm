@@ -8,5 +8,8 @@
 (string) @string
 (regex) @string.regexp
 
+; Comment
+(comment) @comment
+
 ; Error
 (ERROR) @error

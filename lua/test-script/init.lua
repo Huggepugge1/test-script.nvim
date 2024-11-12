@@ -26,13 +26,12 @@ M.setup = function(opts)
 			additional_vim_regex_highlighting = false,
 		},
 	})
+	-- Configure filetype detection
+	vim.filetype.add({
+		extension = {
+			test_script = "tesc", -- Map file extension to filetype
+		},
+	})
 end
-
--- Configure filetype detection
-vim.filetype.add({
-	extension = {
-		test_script = "tesc", -- Map file extension to filetype
-	},
-})
 
 return M
