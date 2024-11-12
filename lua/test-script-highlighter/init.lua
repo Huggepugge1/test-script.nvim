@@ -8,7 +8,7 @@ M.setup = function(opts)
 	-- Register your custom parser
 	parser_config.your_language = {
 		install_info = {
-			url = "path/to/your/tree-sitter-your-language", -- Local path or GitHub URL
+			url = "https://github.com/Huggepugge1/test-script-parser", -- Local path or GitHub URL
 			files = { "src/parser.c" }, -- Parser source files
 			branch = "main",
 			generate_requires_npm = false, -- Set to true if using Node.js
