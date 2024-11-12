@@ -16,6 +16,9 @@
 (colon) @operator
 (assignment_operator) @operator
 
+; Types
+(type) @type.builtin
+
 ; Comment
 (comment) @comment
 
