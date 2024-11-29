@@ -7,6 +7,7 @@
 (for_keyword) @keyword.loop
 
 ; Tests
+(test_name) @function.macro
 (test) @function
 
 ; Variables
@@ -55,6 +56,8 @@
 (built_in_function) @function.builtin
 (built_in_function_call) @function.builtin.call
 (function_call) @function.call
+(function) @function
+(function_name) @function
 
 ; Types
 (type) @type.builtin
