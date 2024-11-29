@@ -13,6 +13,7 @@
 
 ; Variables
 (identifier) @variable
+(constant) @constant
 
 ; Literal
 (number) @number
