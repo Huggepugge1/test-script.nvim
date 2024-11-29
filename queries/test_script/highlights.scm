@@ -1,6 +1,7 @@
 ; Keywords
 (function_keyword) @keyword
-(assignment_keyword) @keyword
+(const_keyword) @keyword
+(let_keyword) @keyword
 (if_keyword) @keyword.control
 (else_keyword) @keyword.control
 
